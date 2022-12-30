@@ -189,12 +189,12 @@ color: #160F29;
   gap: 16px;
 } */
 
-.menu__item-hovered:hover .sub-menu{
+/* .menu__item-hovered:hover .sub-menu{
   display: flex;
   flex-direction: column; 
   
   
-}
+} */
 
 .menu__item-hovered:hover .discover-arrow::after{
   content: '˄';
@@ -219,9 +219,26 @@ color: #160F29;
   
 }
 
+.sub-menu__active{
+  display: block;
+  position: static;
+  padding: 8px 8px 8px 8px;
+  background: transparent;
+}
+
+@media(min-width:993px){
+  .menu__item-hovered:hover .sub-menu{
+    display: flex;
+    flex-direction: column; 
+    
+    
+  }
+}
+
 @media(max-width: 992px){
   .icons__burger{
     display: inline-block;
+    align-items: flex-end;
     cursor: pointer;
   }
   .menu__list{
@@ -235,12 +252,12 @@ color: #160F29;
     top: 160px;
     min-height: 100%;
   } */
-  .menu__item-hovered:hover .sub-menu{
-    /* display: none; */
+  /* .menu__item-hovered:hover .sub-menu{
+    display: block;
     position: static;
     padding: 8px 8px 8px 8px;
     background: transparent;
-  }
+  } */
 
 
 .menu__item,.menu__item a{
@@ -1579,6 +1596,10 @@ color: #160F29;
   
   }
 
+  .before-after__right-side-block{
+    margin-top: 50px;
+  }
+
   
 }
 
@@ -2028,7 +2049,7 @@ opacity: 0.6;
   }
 
   .testemonials__testemonial{
-    width: 350px;
+    width: 320px;
      
    }
 

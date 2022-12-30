@@ -3,13 +3,32 @@ let burgerIcon = document.querySelector('.icons__burger')
 let headerMenu = document.querySelector('.header__menu')
 let menu=document.querySelector('.menu__list')
 let discoveredElem = document.querySelector('.menu__item-hovered')
-let subMenu = document.querySelector('.sub-menu')
+// let subMenu = document.querySelector('.sub-menu')
 
 
 
 burgerIcon.addEventListener('click',()=>{
   menu.classList.toggle('menu__list-burger')
+  
 })
+
+
+
+let hoveredItem = document.querySelector('.menu__item-hovered')
+let subMenu = document.querySelector('.sub-menu')
+
+console.log(hoveredItem)
+
+// hoveredItem.addEventListener('click', ()=>{
+//   subMenu.classList.toggle('sub-menu__active')
+//   console.log('hi')
+// })
+if(screenWidth<=992){
+  hoveredItem.addEventListener('click', ()=>{
+    subMenu.classList.toggle('sub-menu__active')
+    console.log('hi')
+  })
+}
 
 const sliderBeforeAfter = document.querySelector('.before-after__slider-images')
 const beforeImgBlock = document.querySelector('.before-after__slider-before')
@@ -94,7 +113,6 @@ sliderBeforeAfter.addEventListener('touchmove', ()=>{
 
 
 
-
 let testemonials = document.querySelector('.testemonials__testemonials')
 let testemonial = document.querySelectorAll('.testemonials__testemonial')
 let testemonialArray =  Array.from(testemonial)
@@ -113,7 +131,7 @@ let testemonialSignatureArray = Array.from(testemonialSignature)
 let testimonialButton =document.querySelectorAll('.testimonial-button')
 let testimonialButtonArray =  Array.from(testimonialButton)
 
-console.log(testemonialRaitingArray)
+// console.log(testemonialRaitingArray)
 
 let step = 0
 let ofsset = 0
