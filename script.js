@@ -1,3 +1,5 @@
+// BURGER MENU
+
 let screenWidth = window.screen.width
 let burgerIcon = document.querySelector('.icons__burger')
 let headerMenu = document.querySelector('.header__menu')
@@ -13,6 +15,7 @@ burgerIcon.addEventListener('click',()=>{
 })
 
 
+// CLICKED "DISCOVER" ON PHONE
 
 let hoveredItem = document.querySelector('.menu__item-hovered')
 let subMenu = document.querySelector('.sub-menu')
@@ -29,6 +32,8 @@ if(screenWidth<=992){
     
   })
 }
+
+// BEFORE-AFTER SLIDER
 
 const sliderBeforeAfter = document.querySelector('.before-after__slider-images')
 const beforeImgBlock = document.querySelector('.before-after__slider-before')
@@ -94,7 +99,7 @@ sliderBeforeAfter.addEventListener('touchcancel', ()=>{
   isActive = false
 })
 
-sliderBeforeAfter.addEventListener('touchmove', ()=>{
+sliderBeforeAfter.addEventListener('touchmove', (e)=>{
   if(!isActive){
     return
   }
@@ -110,6 +115,9 @@ sliderBeforeAfter.addEventListener('touchmove', ()=>{
   beforeAfterSlider(x)
   pauseEvents(e)
 })
+
+
+// TESTEMONIALS CAROUSEL
 
 
 
