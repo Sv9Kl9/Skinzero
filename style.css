@@ -149,12 +149,12 @@ text-transform: uppercase;
 color: #160F29;
 }
 
-/* .discover-arrow::after{
+.discover-arrow::after{
   content: '˅';
   color: #160F29;
   padding-left: 7px;
   
-} */
+}
 
 
 
@@ -231,12 +231,12 @@ color: #160F29;
     
   }
 
-  .discover-arrow::after{
+  /* .discover-arrow::after{
     content: '˅';
     color: #160F29;
     padding-left: 7px;
     
-  }
+  } */
 
   .menu__item-hovered:hover .discover-arrow::after{
     content: '˄';
