@@ -17,7 +17,7 @@ burgerIcon.addEventListener('click',()=>{
 let hoveredItem = document.querySelector('.menu__item-hovered')
 let subMenu = document.querySelector('.sub-menu')
 
-console.log(hoveredItem)
+
 
 // hoveredItem.addEventListener('click', ()=>{
 //   subMenu.classList.toggle('sub-menu__active')
@@ -26,7 +26,7 @@ console.log(hoveredItem)
 if(screenWidth<=992){
   hoveredItem.addEventListener('click', ()=>{
     subMenu.classList.toggle('sub-menu__active')
-    console.log('hi')
+    
   })
 }
 
