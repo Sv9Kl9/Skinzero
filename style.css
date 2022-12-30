@@ -231,16 +231,18 @@ color: #160F29;
     
   }
 
-  .menu__item-hovered:hover .discover-arrow::after{
-    content: '˄';
-  }
-
   .discover-arrow::after{
     content: '˅';
     color: #160F29;
     padding-left: 7px;
     
   }
+
+  .menu__item-hovered:hover .discover-arrow::after{
+    content: '˄';
+  }
+
+  
 }
 
 @media(max-width: 992px){
