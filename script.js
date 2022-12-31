@@ -104,10 +104,12 @@ sliderBeforeAfter.addEventListener('touchmove', (e)=>{
     return
   }
 
+  console.log(e)
+
   let x;
   let i;
 
-  for( i=0; i < e.changedTouches.lenght; i++){
+  for( i=0; i < e.changedTouches.length; i++){
     x = e.changedTouches[i].pageX
   }
 
