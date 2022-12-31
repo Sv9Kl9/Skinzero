@@ -104,9 +104,10 @@ sliderBeforeAfter.addEventListener('touchmove', (e)=>{
     return
   }
 
-  let x, i
+  let x;
+  let i;
 
-  for( i=0; e < e.changedTouches.lenght; i++){
+  for( i=0; i < e.changedTouches.lenght; i++){
     x = e.changedTouches[i].pageX
   }
 
@@ -115,6 +116,7 @@ sliderBeforeAfter.addEventListener('touchmove', (e)=>{
   beforeAfterSlider(x)
   pauseEvents(e)
 })
+
 
 
 // TESTEMONIALS CAROUSEL
